@@ -46,7 +46,7 @@
 						</a>
 						
 
-						<div id="slogan"></div>
+						<div class="slogan"></div>
 												
 					<!--	<div id="menu">
 							<div id="menu-right">

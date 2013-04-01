@@ -62,17 +62,21 @@ $et_ptemplate_gallery_perpage = isset( $et_ptemplate_settings['et_ptemplate_gall
 
 									$thumbnail = get_thumbnail($width,$height,'portfolio',$titletext,$titletext,true,'Portfolio');
 									$thumb = $thumbnail["thumb"]; ?>
-									
-									<div class="et_pt_gallery_entry">
-										<div class="et_pt_item_image">
-											<?php print_thumbnail($thumb, $thumbnail["use_timthumb"], $titletext, $width, $height, 'portfolio'); ?>
-											<span class="overlay"></span>
+									<div class="et_pt_gallery_entry_div">
+										<div class="et_pt_gallery_entry">
+											<div class="et_pt_item_image">
+												<?php print_thumbnail($thumb, $thumbnail["use_timthumb"], $titletext, $width, $height, 'portfolio'); ?>
+												<span class="overlay"></span>
 											
-											<a class="zoom-icon fancybox" title="<?php the_title(); ?>" rel="gallery" href="<?php echo($thumbnail['fullpath']); ?>"><?php esc_html_e('Zoom in','Webly'); ?></a>
-											<a class="more-icon" href="<?php the_permalink(); ?>"><?php esc_html_e('Read more','Webly'); ?></a>
-										</div> <!-- end .et_pt_item_image -->
-									</div> <!-- end .et_pt_gallery_entry -->
-									
+												<a class="zoom-icon fancybox" style="margin-left:40px;" title="<?php the_title(); ?>" rel="gallery" href="<?php echo($thumbnail['fullpath']); ?>"><?php esc_html_e('Zoom in','Webly'); ?></a>
+												<!--<a class="more-icon" href="<?php the_permalink(); ?>"><?php esc_html_e('Read more','Webly'); ?></a>-->
+											</div> <!-- end .et_pt_item_image -->
+										</div> <!-- end .et_pt_gallery_entry -->
+										<div class="et_pt_gallery_entry_text">
+											<p><?php the_excerpt(); ?></p>
+										</div>
+									</div><!--end .et_pt_gallery_entry_div-->
+
 								<?php endwhile; ?>
 									<div class="page-nav clearfix">
 										<?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); }

@@ -34,7 +34,7 @@
 			$variation = isset( $et_webly_settings['et_fs_variation'] ) ? (int) $et_webly_settings['et_fs_variation'] : 1;
 			$link = isset( $et_webly_settings['et_fs_link'] ) && !empty($et_webly_settings['et_fs_link']) ? $et_webly_settings['et_fs_link'] : get_permalink();
 			$title = isset( $et_webly_settings['et_fs_title'] ) && !empty($et_webly_settings['et_fs_title']) ? $et_webly_settings['et_fs_title'] : get_the_title();
-			$description = isset( $et_webly_settings['et_fs_description'] ) && !empty($et_webly_settings['et_fs_description']) ? $et_webly_settings['et_fs_description'] : truncate_post(20,false);
+			$description = isset( $et_webly_settings['et_fs_description'] ) && !empty($et_webly_settings['et_fs_description']) ? $et_webly_settings['et_fs_description'] : truncate_post(120,false);
 			$video = isset( $et_webly_settings['et_fs_video'] ) && !empty($et_webly_settings['et_fs_video']) ? $et_webly_settings['et_fs_video'] : '';
 			$video_manual_embed = isset( $et_webly_settings['et_fs_video_embed'] ) && !empty($et_webly_settings['et_fs_video_embed']) ? $et_webly_settings['et_fs_video_embed'] : '';
 			

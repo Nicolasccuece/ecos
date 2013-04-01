@@ -33,7 +33,7 @@ if ( ! function_exists( 'et_setup_theme' ) ){
 }
 
 function custom_excerpt_length( $length ) {
-	return 10;
+	return 18;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 

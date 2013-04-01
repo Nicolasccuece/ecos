@@ -33,7 +33,8 @@
 												</a>
 											</div> 	<!-- end .thumb -->
 										<?php } ?>
-										<?php the_content(''); ?>
+										<?php the_excerpt(); ?>
+										<!--<?php the_content(''); ?>-->
 										<a href="<?php echo $et_service_link; ?>" class="readmore"><span><?php esc_html_e('Leia mais...','Webly'); ?></span></a>
 									</div> <!-- end .service -->
 								<?php endwhile; wp_reset_query(); ?>
@@ -44,7 +45,7 @@
 				<?php } ?>
 				<div id="midias">
 					<div id="noticia">
-						<p>Noticias</p>
+						<div class="noticias_images"></div>
 						<?php 
 							$args = array(
 								'category_name' => 'Noticias', // Busca todos os posts que foram marcados com a categoria notícias
@@ -73,11 +74,11 @@
 					<div class="linha_h"></div>
 					<div id="facebook_twitter">
 						<div class="facebook">
-							<p>Facebook</p>
+							<div class="facebook_images"></div>
 						</div>
 						<div class="linha_w"></div>
 						<div class="twitter">
-							<p>Twitter</p>
+							<div class="twitter_images"></div>
 						</div>
 
 					</div>

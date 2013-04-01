@@ -11,7 +11,7 @@
 	}
 ?>
 <!-- You can start editing here. -->
-
+<!--
 <div id="comment-wrap">
 
 	<?php if ( have_comments() ) : ?>
@@ -22,7 +22,7 @@
 			<div class="comment_navigation_top clearfix">
 				<div class="nav-previous"><?php previous_comments_link( __( '<span class="meta-nav">&larr;</span> Older Comments', 'Webly' ) ); ?></div>
 				<div class="nav-next"><?php next_comments_link( __( 'Newer Comments <span class="meta-nav">&rarr;</span>', 'Webly' ) ); ?></div>
-			</div> <!-- .navigation -->
+			</div> <!-- .navigation --
 		<?php endif; // check for comment navigation ?>
 		
 		<?php if ( ! empty($comments_by_type['comment']) ) : ?>
@@ -35,7 +35,7 @@
 			<div class="comment_navigation_bottom clearfix">
 				<div class="nav-previous"><?php previous_comments_link( __( '<span class="meta-nav">&larr;</span> Older Comments', 'Webly' ) ); ?></div>
 				<div class="nav-next"><?php next_comments_link( __( 'Newer Comments <span class="meta-nav">&rarr;</span>', 'Webly' ) ); ?></div>
-			</div> <!-- .navigation -->
+			</div> <!-- .navigation --
 		<?php endif; // check for comment navigation ?>
 			
 		<?php if ( ! empty($comments_by_type['pings']) ) : ?>
@@ -49,13 +49,13 @@
 	<?php else : // this is displayed if there are no comments so far ?>
 	   <div id="comment-section" class="nocomments">
 		  <?php if ('open' == $post->comment_status) : ?>
-			 <!-- If comments are open, but there are no comments. -->
+			 <!-- If comments are open, but there are no comments. --
 			 
 		  <?php else : // comments are closed ?>
-			 <!-- If comments are closed. -->
+			 <!-- If comments are closed. --
 				<div id="respond">
 				   
-				</div> <!-- end respond div -->
+				</div> <!-- end respond div --
 		  <?php endif; ?>
 	   </div>
 	<?php endif; ?>
